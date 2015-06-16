@@ -1,5 +1,6 @@
 Marko Sample - Hot Reloading
 ===============================
+Marko provides a hot-reloading feature that allows templates to automatically be reloaded without a restart. Your app must explicitly turn on this feature as described below and you would typically only enable hot-reloading in development (not production).
 
 # Get started
 
