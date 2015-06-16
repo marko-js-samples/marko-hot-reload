@@ -39,6 +39,8 @@ require('fs').watch(templatesDir, function (event, filename) {
 });
 ```
 
+The [chokidar](https://github.com/paulmillr/chokidar) module provides more robust file watching functionality that works across most OSs.
+
 # Using browser-refresh
 
 You can also use the [browser-refresh](https://github.com/patrick-steele-idem/browser-refresh) module to watch for changes to Marko template files. You just need to add the following line of code into the main script for your app:
