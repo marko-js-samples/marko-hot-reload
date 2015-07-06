@@ -56,6 +56,22 @@ npm install browser-refresh --global
 browser-refresh server.js
 ```
 
+In addition, you'll need to include the `<browser-refresh>` tag in your main page template as shown below:
+
+```xml
+<!doctype html>
+<html>
+    <head>
+        ...
+    </head>
+    <body>
+        ...
+
+        <browser-refresh enabled="true" />
+    </body>
+</html>
+```
+
 For more details, please see the docs for the [browser-refresh](https://github.com/patrick-steele-idem/browser-refresh) module.
 
 
