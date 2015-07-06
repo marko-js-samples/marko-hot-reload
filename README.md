@@ -72,6 +72,18 @@ In addition, you'll need to include the `<browser-refresh>` tag in your main pag
 </html>
 ```
 
+In addition, you will need to let the `browser-refresh` process launcher know when your server is ready so that it can trigger a refresh of all web pages at the correct time. This can be done using code similar to the following:
+
+```javascript
+app.listen(port, function() {
+    console.log('Listening on port %d', port);
+
+    if (process.send) {
+        process.send('online');
+    }
+});
+```
+
 For more details, please see the docs for the [browser-refresh](https://github.com/patrick-steele-idem/browser-refresh) module.
 
 
