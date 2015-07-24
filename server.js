@@ -1,5 +1,8 @@
+require('marko/node-require').install();
+
 var express = require('express');
 var marko   = require('marko');
+
 var app = express();
 var path = require('path');
 
@@ -22,11 +25,12 @@ if (process.env.NODE_ENV !== 'production') {
     });
 }
 
-var indexTemplate = marko.load(require.resolve('./views/index.marko'));
-    app.get('/', function(req, res) {
-        indexTemplate.render({
-            name: 'World'
-        }, res);
+var indexTemplate = require('./views/index.marko');
+
+app.get('/', function(req, res) {
+    indexTemplate.render({
+        name: 'World'
+    }, res);
 });
 
 app.listen(8000, function() {
