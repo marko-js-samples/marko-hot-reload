@@ -2,7 +2,7 @@
   "name": "marko-hot-reload",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.12.3",
-    "marko": "^2.4.1"
+    "marko": "^3.0.3"
   }
 }
