@@ -1,4 +1,4 @@
-require('marko/node-require').install();
+require('marko/node-require');
 
 var express = require('express');
 var marko   = require('marko');
