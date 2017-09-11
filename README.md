@@ -67,7 +67,7 @@ In addition, you'll need to include the `<browser-refresh>` tag in your main pag
     <body>
         ...
 
-        <browser-refresh enabled="true" />
+        <browser-refresh/>
     </body>
 </html>
 ```
